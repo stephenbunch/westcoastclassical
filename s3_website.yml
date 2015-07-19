@@ -1,0 +1,7 @@
+s3_id: AKIAJKWOE3O55NBYME6Q
+s3_secret: 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
+s3_bucket: staging.westcoastclassical.org
+site: www
+exclude_from_upload:
+  - s3_website.yml
+gzip: true
