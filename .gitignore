@@ -1,0 +1,8 @@
+/node_modules/
+
+/www/*
+!/www/img/
+!/www/favicon.ico
+
+.DS_Store
+npm-debug.log
