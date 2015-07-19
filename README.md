@@ -3,7 +3,7 @@ http://staging.westcoastclassical.org.s3-website-us-east-1.amazonaws.com
 ## Setup
 ```bash
 npm install
-
+gulp
 ```
 
 ## Deploy

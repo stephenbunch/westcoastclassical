@@ -4,6 +4,7 @@ import makeHtml from './make:html';
 import cleanHtml from './clean:html';
 import { watchify } from './_browserify';
 import configure from './_make:js.config';
+import makeCss from './make:css';
 
 export default function( projectDir, done ) {
   var browserSync = BrowserSync.create()
@@ -33,7 +34,7 @@ export default function( projectDir, done ) {
           }
         }, {
           match: [
-            `${ projectDir }/src/sass/**/*.scss`
+            `${ projectDir }/src/css/**/*.scss`
           ],
           fn: () => {
             makeCss( projectDir ).pipe( browserSync.stream() );
