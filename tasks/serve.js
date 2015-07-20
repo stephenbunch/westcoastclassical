@@ -8,7 +8,7 @@ import makeCss from './make:css';
 
 export default function( projectDir, done ) {
   var browserSync = BrowserSync.create()
-  portfinder.basePort = 3000;
+  portfinder.basePort = process.env.PORT || 3000;
   portfinder.getPort( ( err, port ) => {
     portfinder.getPort( ( err, uiPort ) => {
       browserSync.init({
