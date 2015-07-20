@@ -1,7 +1,12 @@
 import React from 'react';
-import Home from './Home';
+import HomePage from './HomePage';
+import AboutPage from './AboutPage';
 
 export default [{
   path: '/',
-  content: <Home />
+  content: ( <HomePage /> )
+}, {
+  path: '/about',
+  content: ( <AboutPage /> ),
+  label: 'About Us'
 }];

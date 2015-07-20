@@ -2,16 +2,21 @@ require( 'babel/register' );
 
 var React = require( 'react' );
 var pages = require( './src/html' );
-pages.forEach( function( page ) {
-  if ( !/^\//.test( page.path ) ) {
-    page.path = '/' + page.path;
+pages = pages.map( function( page ) {
+  var path = page.path;
+  if ( !/^\//.test( path ) ) {
+    path = '/' + path;
   }
-  if ( page.path === '/' ) {
-    page.path = 'index.html';
+  if ( path === '/' ) {
+    path = 'index.html';
   } else {
-    page.path = page.path.substr( 1 ) + '/index.html';
+    path = path.substr( 1 ) + '/index.html';
   }
-  page.content = React.renderToStaticMarkup( page.content );
+  var content = React.renderToStaticMarkup( page.content );
+  return {
+    path: path,
+    content: content
+  };
 });
 
 process.send( JSON.stringify( pages ) );
