@@ -12,7 +12,7 @@ var serve = require( './tasks/serve' );
   'make:css',
   'make:js'
 ].forEach( function( task ) {
-  gulp.task( task, require( './tasks/' + task ).bind( undefined, __dirname ) );
+  gulp.task( task, require( './tasks/' + task.replace( /:/g, '_' ) ).bind( undefined, __dirname ) );
 });
 
 gulp.task( 'clean', [ 'clean:html', 'clean:css', 'clean:js' ] );
