@@ -1,9 +1,20 @@
-.column-layout {
-  display: flex;
-  flex-direction: row;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.row-layout {
-  display: flex;
-  flex-direction: column;
+html, body {
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
 }

@@ -1,13 +1,14 @@
 import React from 'react';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import ProgramsPage from './ProgramsPage';
-import ConcertsTicketsPage from './ConcertsTicketsPage';
-import DonatePage from './DonatePage';
-import MemberAnnouncementsPage from './MemberAnnouncementsPage';
-import PicturesVideosPage from './PicturesVideosPage';
-import MeetMusiciansPage from './MeetMusiciansPage';
-import ContactPage from './ContactPage';
+
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProgramsPage from './pages/ProgramsPage';
+import ConcertsTicketsPage from './pages/ConcertsTicketsPage';
+import DonatePage from './pages/DonatePage';
+import MemberAnnouncementsPage from './pages/MemberAnnouncementsPage';
+import PicturesVideosPage from './pages/PicturesVideosPage';
+import MeetMusiciansPage from './pages/MeetMusiciansPage';
+import ContactPage from './pages/ContactPage';
 
 export default [{
   path: '/',
@@ -21,23 +22,23 @@ export default [{
   content: ( <ProgramsPage /> ),
   label: 'Programs'
 }, {
-  path: '/concerts&tickets',
+  path: '/concerts',
   content: ( <ConcertsTicketsPage /> ),
   label: 'Concerts & Tickets'
 }, {
-  path: '/Donate',
+  path: '/donate',
   content: ( <DonatePage /> ),
   label: 'Donate'
 }, {
-  path: '/membersannouncements',
+  path: '/announcements',
   content: ( <MemberAnnouncementsPage /> ),
   label: 'Member Announcements'
 }, {
-  path: '/pictures&videos',
+  path: '/pictures',
   content: ( <PicturesVideosPage /> ),
   label: 'Pictures & Videos'
 }, {
-  path: '/meetthemusicians',
+  path: '/musicians',
   content: ( <MeetMusiciansPage /> ),
   label: 'Meet the Musicians'
 }, {

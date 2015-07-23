@@ -1,0 +1,19 @@
+.main-navigation {
+  background-color: #8e0408;
+  border-top: 3px solid #be1f2d;
+}
+
+.main-navigation__items {
+  list-style: none;
+}
+
+.main-navigation__item__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.main-navigation__item__link:hover {
+  color: #fbdbb1;
+}

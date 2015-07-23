@@ -1,5 +1,7 @@
 import React from 'react';
 import PageHeader from './PageHeader';
+import PageFooter from './PageFooter';
+import MainNavigation from './MainNavigation';
 
 export default class Page extends React.Component {
   render() {
@@ -13,11 +15,16 @@ export default class Page extends React.Component {
           <title>{ this.props.title } | West Coast Classical</title>
 
           <link rel="shortcut icon" href="favicon.ico" />
+          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic" />
           <link rel="stylesheet" href="/site.css" />
         </head>
-        <body>
+        <body className="row-layout">
           <PageHeader />
-          { this.props.children }
+          <MainNavigation />
+          <div className="grid--container page-body layout__item--expand">
+            { this.props.children }
+          </div>
+          <PageFooter />
           <script src="/site.js"></script>
         </body>
       </html>
