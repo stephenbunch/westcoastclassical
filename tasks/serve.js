@@ -1,10 +1,10 @@
 import portfinder from 'portfinder';
 import BrowserSync from 'browser-sync';
-import makeHtml from './make:html';
-import cleanHtml from './clean:html';
+import makeHtml from './make_html';
+import cleanHtml from './clean_html';
 import { watchify } from './_browserify';
-import configure from './_make:js.config';
-import makeCss from './make:css';
+import configure from './_make_js.config';
+import makeCss from './make_css';
 
 export default function( projectDir, done ) {
   var browserSync = BrowserSync.create()

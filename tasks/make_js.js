@@ -1,7 +1,7 @@
 import { browserify, bundle } from './_browserify';
 import _ from 'lodash';
 import path from 'path';
-import configure from './_make:js.config';
+import configure from './_make_js.config';
 
 export default function( projectDir, done ) {
   var config = configure( projectDir );
