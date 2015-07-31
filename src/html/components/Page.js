@@ -12,7 +12,7 @@ export default class Page extends React.Component {
           <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
           <meta httpEquiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'" />
 
-          <title>{ this.props.title } | West Coast Classical</title>
+          <title>{ this.props.title.toLowerCase() } | WCC</title>
 
           <link rel="shortcut icon" href="favicon.ico" />
           <link rel="stylesheet" href="/fonts/aphrodite-slim-stylistic/font.css" />
