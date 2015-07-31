@@ -1,5 +1,7 @@
+@import 'colors';
+
 .page-footer {
   min-height: 80px;
-  background-color: #8e0408;
-  margin-bottom: 8px;
+  background-color: $dark-red-color;
+  margin-bottom: 16px;
 }

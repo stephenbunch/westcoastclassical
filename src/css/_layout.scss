@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.column-layout--align-bottom {
+  align-items: flex-end;
+}
+
 .row-layout {
   display: flex;
   flex-direction: column;
@@ -10,4 +14,8 @@
 
 .layout__item--expand {
   flex-grow: 1;
+}
+
+.layout__item--fixed {
+  flex-shrink: 0;
 }

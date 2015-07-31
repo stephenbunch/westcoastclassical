@@ -12,37 +12,37 @@ import ContactPage from './pages/ContactPage';
 
 export default [{
   path: '/',
-  content: ( <HomePage /> )
+  html: HomePage
 }, {
   path: '/about',
-  content: ( <AboutPage /> ),
+  html: AboutPage,
   label: 'About Us'
 }, {
   path: '/programs',
-  content: ( <ProgramsPage /> ),
+  html: ProgramsPage,
   label: 'Programs'
 }, {
   path: '/concerts',
-  content: ( <ConcertsTicketsPage /> ),
+  html: ConcertsTicketsPage,
   label: 'Concerts & Tickets'
 }, {
   path: '/donate',
-  content: ( <DonatePage /> ),
+  html: DonatePage,
   label: 'Donate'
 }, {
   path: '/announcements',
-  content: ( <MemberAnnouncementsPage /> ),
+  html: MemberAnnouncementsPage,
   label: 'Member Announcements'
 }, {
   path: '/pictures',
-  content: ( <PicturesVideosPage /> ),
+  html: PicturesVideosPage,
   label: 'Pictures & Videos'
 }, {
   path: '/musicians',
-  content: ( <MeetMusiciansPage /> ),
+  html: MeetMusiciansPage,
   label: 'Meet the Musicians'
 }, {
   path: '/contact',
-  content: ( <ContactPage /> ),
+  html: ContactPage,
   label: 'Contact'
 }];

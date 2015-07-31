@@ -1,10 +1,14 @@
+@import 'colors';
+
 .main-navigation {
-  background-color: #8e0408;
-  border-top: 3px solid #be1f2d;
+  background-color: $dark-red-color;
+  border-top: 3px solid $mid-red-color;
 }
 
 .main-navigation__items {
   list-style: none;
+  flex-wrap: wrap;
+  padding: 4px 8px 8px;
 }
 
 .main-navigation__item__link {
@@ -12,8 +16,20 @@
   text-decoration: none;
   font-size: 14px;
   text-transform: lowercase;
+  padding: 2px 8px 4px;
+  margin: 0 8px;
+  line-height: 24px;
+  transition: all .4s cubic-bezier(.25,.8,.25,1);
+  border-radius: 4px;
 }
 
-.main-navigation__item__link:hover {
-  color: #fbdbb1;
+.main-navigation__item:not(:last-child)::after {
+  content: '|';
+  color: #fff;
+}
+
+.main-navigation__item__link:hover,
+.main-navigation__item--current .main-navigation__item__link {
+  color: $yellow-color;
+  background-color: $mid-red-color;
 }

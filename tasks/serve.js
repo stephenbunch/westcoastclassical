@@ -25,7 +25,7 @@ export default function( projectDir, done ) {
         files: [{
           match: [
             `${ projectDir }/src/html/**/*.js`,
-            `${ projectDir }/pages.js`
+            `${ projectDir }/render.js`
           ],
           fn: () => {
             cleanHtml( projectDir, () => {

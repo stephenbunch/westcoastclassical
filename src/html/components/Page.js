@@ -15,7 +15,7 @@ export default class Page extends React.Component {
           <title>{ this.props.title } | West Coast Classical</title>
 
           <link rel="shortcut icon" href="favicon.ico" />
-          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic" />
+          <link rel="stylesheet" href="/fonts/aphrodite-slim-stylistic/font.css" />
           <link rel="stylesheet" href="/site.css" />
         </head>
         <body className="row-layout">

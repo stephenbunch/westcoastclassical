@@ -3,6 +3,7 @@
 /www/*
 !/www/img/
 !/www/favicon.ico
+!/www/fonts/
 
 .DS_Store
 npm-debug.log
