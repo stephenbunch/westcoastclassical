@@ -5,7 +5,7 @@
   "scripts": {
     "start": "gulp"
   },
-  "author": "",
+  "author": "Stephen Bunch",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",

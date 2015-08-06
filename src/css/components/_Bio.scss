@@ -1,0 +1,27 @@
+@import 'colors';
+@import 'util/text';
+
+.Bio {
+  background-color: #000;
+  color: #e1c283;
+  line-height: 1.75em;
+  padding: 56px 24px 24px;
+}
+
+.Bio-photo {
+  width: 213px;
+  height: 281px;
+  background-size: cover;
+  float: left;
+  margin: -56px 24px 0 -24px;
+}
+
+.Bio-name {
+  @extend .u-titleStylish;
+  color: $mid-red-color;
+  height: 100px;
+  padding-right: 16px;
+  line-height: 3em;
+  float: left;
+  margin-top: -44px;
+}

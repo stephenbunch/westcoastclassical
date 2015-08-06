@@ -30,6 +30,9 @@
 
 .MainNavigation-itemLink:hover,
 .MainNavigation-item--current .MainNavigation-itemLink {
-  color: $yellow-color;
   background-color: $mid-red-color;
+}
+
+.MainNavigation-item:not(.MainNavigation-item--current) .MainNavigation-itemLink:hover {
+  color: $yellow-color;
 }
