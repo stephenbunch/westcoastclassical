@@ -1,0 +1,8 @@
+.ColumnLayout {
+  display: flex;
+  flex-direction: row;
+}
+
+.ColumnLayout--alignBottom {
+  align-items: flex-end;
+}

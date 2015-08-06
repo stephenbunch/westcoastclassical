@@ -1,17 +1,17 @@
 @import 'colors';
 
-.main-navigation {
+.MainNavigation {
   background-color: $dark-red-color;
   border-top: 3px solid $mid-red-color;
 }
 
-.main-navigation__items {
+.MainNavigation-items {
   list-style: none;
   flex-wrap: wrap;
   padding: 4px 8px 8px;
 }
 
-.main-navigation__item__link {
+.MainNavigation-itemLink {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -23,13 +23,13 @@
   border-radius: 4px;
 }
 
-.main-navigation__item:not(:last-child)::after {
+.MainNavigation-item:not(:last-child)::after {
   content: '|';
   color: #fff;
 }
 
-.main-navigation__item__link:hover,
-.main-navigation__item--current .main-navigation__item__link {
+.MainNavigation-itemLink:hover,
+.MainNavigation-item--current .MainNavigation-itemLink {
   color: $yellow-color;
   background-color: $mid-red-color;
 }

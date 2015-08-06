@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../components/Page';
 
-export default class PicturesVideosPage extends React.Component {
+export default class MediaPage extends React.Component {
   render() {
     return (
       <Page title="Pictures & Videos">

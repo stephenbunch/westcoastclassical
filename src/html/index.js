@@ -3,11 +3,10 @@ import React from 'react';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProgramsPage from './pages/ProgramsPage';
-import ConcertsTicketsPage from './pages/ConcertsTicketsPage';
+import ConcertsPage from './pages/ConcertsPage';
 import DonatePage from './pages/DonatePage';
-import MemberAnnouncementsPage from './pages/MemberAnnouncementsPage';
-import PicturesVideosPage from './pages/PicturesVideosPage';
-import MeetMusiciansPage from './pages/MeetMusiciansPage';
+import MembersPage from './pages/MembersPage';
+import MediaPage from './pages/MediaPage';
 import ContactPage from './pages/ContactPage';
 
 export default [{
@@ -23,24 +22,20 @@ export default [{
   label: 'Programs'
 }, {
   path: '/concerts',
-  html: ConcertsTicketsPage,
+  html: ConcertsPage,
   label: 'Concerts & Tickets'
 }, {
   path: '/donate',
   html: DonatePage,
   label: 'Donate'
 }, {
-  path: '/announcements',
-  html: MemberAnnouncementsPage,
-  label: 'Member Announcements'
-}, {
-  path: '/pictures',
-  html: PicturesVideosPage,
+  path: '/media',
+  html: MediaPage,
   label: 'Pictures & Videos'
 }, {
-  path: '/musicians',
-  html: MeetMusiciansPage,
-  label: 'Meet the Musicians'
+  path: '/members',
+  html: MembersPage,
+  label: 'Members'
 }, {
   path: '/contact',
   html: ContactPage,

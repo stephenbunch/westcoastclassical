@@ -8,16 +8,16 @@ export default class MainNavigation extends React.Component {
 
   render() {
     return (
-      <nav className="main-navigation grid--container">
-        <ul className="main-navigation__items column-layout">
+      <nav className="MainNavigation Grid">
+        <ul className="MainNavigation-items ColumnLayout">
           { pages.filter( x => x.path !== '/' ).map( page => {
             return (
               <li key={ page.path }
                   className={ `
-                    main-navigation__item
-                    ${ page.path === this.context.path ? 'main-navigation__item--current' : ''
+                    MainNavigation-item
+                    ${ page.path === this.context.path ? 'MainNavigation-item--current' : ''
                   }` }>
-                <a href={ page.path } className="main-navigation__item__link">{ page.label }</a>
+                <a href={ page.path } className="MainNavigation-itemLink">{ page.label }</a>
               </li>
             );
           }) }

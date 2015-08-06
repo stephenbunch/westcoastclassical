@@ -1,0 +1,32 @@
+.MainSearch {
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+%MainSearch-element {
+  height: 34px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.MainSearch-input {
+  @extend %MainSearch-element;
+  background-image: url('/img/search_input.png');
+  width: 156px;
+  padding-left: 16px;
+}
+
+.MainSearch-input::placeholder {
+  color: $mid-red-color;
+}
+
+.MainSearch-button {
+  @extend %MainSearch-element;
+  background-image: url('/img/search_button.png');
+  width: 34px;
+  text-indent: -9999px;
+  cursor: pointer;
+}

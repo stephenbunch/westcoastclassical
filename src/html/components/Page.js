@@ -18,10 +18,10 @@ export default class Page extends React.Component {
           <link rel="stylesheet" href="/fonts/aphrodite-slim-stylistic/font.css" />
           <link rel="stylesheet" href="/site.css" />
         </head>
-        <body className="row-layout">
+        <body className="RowLayout">
           <PageHeader />
           <MainNavigation />
-          <div className="grid--container page-body layout__item--expand">
+          <div className="Grid PageBody u-layoutItemFill">
             { this.props.children }
           </div>
           <PageFooter />
