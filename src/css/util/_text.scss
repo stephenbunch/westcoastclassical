@@ -1,5 +1,21 @@
-.u-titleStylish {
+.u-headingStylish {
   font-family: AphroditeSlimStylistic;
   font-size: 42px;
   font-weight: 300;
+}
+
+%heading {
+  text-transform: uppercase;
+  color: $mid-red-color;
+  font-weight: 400;
+}
+
+.u-h1 {
+  @extend %heading;
+  font-size: 24px;
+}
+
+.u-h2 {
+  @extend %heading;
+  font-size: 20px;
 }

@@ -22,6 +22,7 @@
     "gulp-minify-css": "^1.2.0",
     "gulp-postcss": "^5.1.9",
     "gulp-sass": "^2.0.4",
+    "gulp-stylus": "^2.0.6",
     "lodash": "^3.10.0",
     "mkdirp": "^0.5.1",
     "portfinder": "^0.4.0",

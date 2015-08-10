@@ -1,6 +1,3 @@
-@import 'colors';
-@import 'util/text';
-
 .Bio {
   background-color: #000;
   color: #e1c283;
@@ -17,7 +14,6 @@
 }
 
 .Bio-name {
-  @extend .u-titleStylish;
   color: $mid-red-color;
   height: 100px;
   padding-right: 16px;

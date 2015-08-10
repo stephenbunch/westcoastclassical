@@ -5,7 +5,7 @@ export default class Bio extends React.Component {
     return (
       <div className="Bio u-floatGroup">
         <div className="Bio-photo" style={{ backgroundImage: `url('${ this.props.photo}')` }} />
-        <span className="Bio-name">{ this.props.name }</span>
+        <span className="Bio-name u-headingStylish">{ this.props.name }</span>
         { this.props.children }
       </div>
     );
